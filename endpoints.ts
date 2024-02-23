@@ -2,15 +2,10 @@
 // Special thanks SantaSpeen for it https://github.com/SantaSpeen/anixart (assignment of endpoints was checked with it module)
 
 // API URLs
-export const BASE_URL = "https://api.anixart.tv"
+export const BASE_URL = "https://api.anixart.tv/"
 export const IFRAME_URL = "https://anixart.tv/iframe?url="
 
-// Response codes
-export enum ECode {
-  SUCCESS = 0,
-  FAILED = 1,
-  BANNED = 403,
-}
+export const USER_AGENT = "AnixartApp/8.1.2-23121216"
 
 // Comment
 export enum EComment {
@@ -19,7 +14,7 @@ export enum EComment {
 }
 
 // Vote
-export enum EVotes {
+export enum EVote {
   LAST_FIRST = 1,
   OLD_FIRST = 2,
   STAR_5 = 3,
@@ -142,11 +137,6 @@ export const EXPORT_BOOKMARKS = "export/bookmarks"
 export const FAVORITES = "favorite/all/{page}"
 export const FAVORITE_ADD = "favorite/add/{releaseId}"
 export const FAVORITE_DELETE = "favorite/delete/{releaseId}"
-
-// Filter API
-
-// POST
-export const FILTER = "filter/{page}"
 
 // History API
 
@@ -277,6 +267,8 @@ export const RELEASE_FAVORITE_VIDEO_ADD = "releaseVideoFavorite/add/{releaseId}"
 export const RELEASE_FAVORITE_VIDEO_DELETE = "releaseVideoFavorite/delete/{releaseId}"
 
 // POST
+export const RELEASE_FILTER = "filter/{page}"
+
 export const RELEASE_COMMENT_ADD = "release/comment/add/{releaseId}"
 export const RELEASE_COMMENT_EDIT = "release/comment/edit/{commentId}"
 export const RELEASE_COMMENT_PROCESS = "release/comment/process/{commentId}"

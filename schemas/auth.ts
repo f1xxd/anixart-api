@@ -1,5 +1,5 @@
-import type { IProfile, IProfileToken } from '@/anixart/schemas/profile'
-import type { IResponse } from '@/anixart/schemas/response'
+import type { IProfile, IProfileToken } from "@/anixart/schemas/profile"
+import type { IResponse } from "@/anixart/schemas/response"
 
 export interface IAuthLoginRequest {
   login: string
@@ -9,4 +9,12 @@ export interface IAuthLoginRequest {
 export interface IAuthLoginResponse extends IResponse {
   profile: IProfile
   profileToken: IProfileToken
+}
+
+export interface IAuthVKRequest {
+  vkAccessToken: string
+}
+
+export interface IAuthGoogleRequest {
+  googleIdToken: string
 }

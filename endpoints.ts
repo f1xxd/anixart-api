@@ -6,6 +6,7 @@ export const BASE_URL = "https://api.anixart.tv/"
 export const IFRAME_URL = "https://anixart.tv/iframe?url="
 
 export const USER_AGENT = "AnixartApp/8.1.2-23121216"
+export const VK_APP_ID = 7432776
 
 // Comment
 export enum EComment {
@@ -315,4 +316,3 @@ export const SEARCH_HISTORY = "search/history/{page}"
 
 // GET
 export const TYPES = "type/{releaseId}"
-export const ALL_TYPES = "type/all"

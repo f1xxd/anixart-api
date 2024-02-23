@@ -1,5 +1,5 @@
 import { call } from "@/anixart"
-import { SIGN_IN } from "@/anixart/endpoints"
+import { SIGN_IN as endpoint } from "@/anixart/endpoints"
 
 import type { IBaseApiParams } from "@/anixart/types"
 import type { IAuthLoginRequest, IAuthLoginResponse } from "@/anixart/schemas/auth"
@@ -22,7 +22,7 @@ export async function signIn(params: IAuthLoginParams): Promise<IAuthLoginResult
   }
 
   const response = await call<IAuthLoginResponse>({
-    path: SIGN_IN,
+    path: endpoint,
     urlencoded: body,
     ...params.request,
   })

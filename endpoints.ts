@@ -3,6 +3,7 @@
 
 // API URLs
 export const BASE_URL = "https://api.anixart.tv/"
+export const ALT_URL = "https://api-s2.anixart.tv/"
 export const IFRAME_URL = "https://anixart.tv/iframe?url="
 
 export const USER_AGENT = "AnixartApp/8.1.2-23121216"
@@ -109,8 +110,9 @@ export const DISCOVER_WATCHING = "discover/watching/{page}"
 // Episode API
 
 // GET
-export const EPISODE = "episode/{releaseId}"
+export const EPISODE_TYPES = "episode/{releaseId}"
 export const EPISODE_SOURCES = "episode/{releaseId}/{typeId}"
+export const EPISODES = "episode/{releaseId}/{typeId}/{sourceId}"
 export const EPISODE_TARGET = "episode/target/{releaseId}/{sourceId}/{position}"
 export const EPISODE_UPDATES = "episode/updates/{releaseId}/{page}"
 

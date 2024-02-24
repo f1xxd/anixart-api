@@ -6,7 +6,7 @@ export enum ResponseCode {
 }
 
 export interface IResponse {
-  code: ResponseCode
+  code?: ResponseCode
 }
 
 export interface IPageableResponse<T> extends IResponse {

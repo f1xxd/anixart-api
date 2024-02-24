@@ -1,5 +1,6 @@
-export interface ITypesResult {
-  code: number
+import type { IResponse } from "@/anixart/schemas/response"
+
+export interface ITypesResponse extends IResponse {
   types: ITypes[]
 }
 

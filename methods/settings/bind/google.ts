@@ -2,8 +2,7 @@ import { call } from "@/anixart"
 import { SETTINGS_PROFILE_BIND_GOOGLE as endpoint } from "@/anixart/endpoints"
 
 import type { IBaseApiParams } from "@/anixart/types"
-import type { IBindGoogleRequest } from "@/anixart/schemas/bind"
-import type { IResponse } from "@/anixart/schemas/response"
+import type { IBindGoogleRequest, IBindGoogleResponse } from "@/anixart/schemas/bind"
 
 export interface IBindGoogleParams extends IBaseApiParams {
   token: string
@@ -19,7 +18,7 @@ export async function bindGoogle(params: IBindGoogleParams): Promise<IBindGoogle
     idToken: params.googleToken,
   }
 
-  const response = await call<IResponse>({
+  const response = await call<IBindGoogleResponse>({
     path: endpoint,
     token: params.token,
     urlencoded: body,

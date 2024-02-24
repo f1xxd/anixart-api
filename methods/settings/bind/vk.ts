@@ -2,8 +2,7 @@ import { call } from "@/anixart"
 import { SETTINGS_PROFILE_BIND_VK as endpoint } from "@/anixart/endpoints"
 
 import type { IBaseApiParams } from "@/anixart/types"
-import type { IBindVKRequest } from "@/anixart/schemas/bind"
-import type { IResponse } from "@/anixart/schemas/response"
+import type { IBindVKRequest, IBindVKResponse } from "@/anixart/schemas/bind"
 
 export interface IBindVKParams extends IBaseApiParams {
   token: string
@@ -19,7 +18,7 @@ export async function bindVK(params: IBindVKParams): Promise<IBindVKResult> {
     accessToken: params.vkToken,
   }
 
-  const response = await call<IResponse>({
+  const response = await call<IBindVKResponse>({
     path: endpoint,
     token: params.token,
     urlencoded: body,

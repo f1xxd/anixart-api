@@ -11,3 +11,7 @@
 9) bindGoogle
 10) types
 11) changePassword
+12) changeEmail
+13) changeLogin
+14) editStatus
+15) editSocial

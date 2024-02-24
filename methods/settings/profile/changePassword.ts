@@ -1,5 +1,5 @@
 import { call } from "@/anixart"
-import { CHANGE_PASSWORD as endpoint } from "@/anixart/endpoints"
+import { SETTINGS_PROFILE_CHANGE_PASSWORD as endpoint } from "@/anixart/endpoints"
 
 import type { IBaseApiParams } from "@/anixart/types"
 import type { IChangePasswordRequest, IChangePasswordResponse } from "@/anixart/schemas/settings"

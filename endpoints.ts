@@ -187,14 +187,13 @@ export const SETTINGS_PROFILE = "profile/preference/my"
 export const SETTINGS_PROFILE_CHANGE_EMAIL = "profile/preference/email/change"
 export const SETTINGS_PROFILE_CHANGE_EMAIL_CONFIRM = "profile/preference/email/change/confirm"
 export const SETTINGS_PROFILE_STATUS_DELETE = "profile/preference/status/delete"
+export const SETTINGS_PROFILE_CHANGE_PASSWORD = "profile/preference/password/change"
 
 export const SETTINGS_NOTIFICATION = "profile/preference/notification/my"
 export const SETTINGS_NOTIFICATION_RELEASE = "profile/preference/notification/episode/edit"
 export const SETTINGS_NOTIFICATION_FIRST_RELEASE = "profile/preference/notification/episode/first/edit"
 export const SETTINGS_NOTIFICATION_COMMENTS = "profile/preference/notification/comment/edit"
 export const SETTINGS_NOTIFICATION_COLLECTION = "profile/preference/notification/my/collection/comment/edit"
-
-export const CHANGE_PASSWORD = "profile/preference/password/change"
 
 // POST
 export const EDIT_STATUS = "profile/preference/status/edit"

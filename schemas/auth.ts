@@ -15,6 +15,10 @@ export interface IAuthVKRequest {
   vkAccessToken: string
 }
 
+export interface IAuthVKResponse extends IResponse {}
+
 export interface IAuthGoogleRequest {
   googleIdToken: string
 }
+
+export interface IAuthGoogleResponse extends IResponse {}

@@ -26,3 +26,6 @@
 24) discoverDiscussing
 25) discoverWatching
 26) discoverRecommendations
+27) favoriteAdd
+28) favoriteDelete
+29) favorites

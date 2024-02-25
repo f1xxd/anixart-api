@@ -3,6 +3,22 @@ export interface IProfileToken {
   token: string
 }
 
+export interface IForeignProfile {
+  id: number
+  login: string
+  avatar: string
+  ban_expires: number
+  ban_reason: unknown
+  privilege_level: number
+  badge_id: number | unknown
+  badge_name: string | unknown
+  badge_type: string | unknown
+  badge_url: string | unknown
+  is_banned: boolean
+  is_sponsor: boolean
+  is_verified: boolean
+}
+
 export interface IProfile {
   id: number
   login: string

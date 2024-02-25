@@ -1,4 +1,3 @@
-export * from "./auth/resend"
 export * from "./auth/signIn/google"
 export * from "./auth/signIn/signIn"
 export * from "./auth/signIn/vk"
@@ -14,6 +13,12 @@ export * from "./collection/edit"
 export * from "./config/toggles"
 
 export * from "./directlink/parse"
+
+export * from "./discover/comments"
+export * from "./discover/discussing"
+export * from "./discover/interesting"
+export * from "./discover/recommendations"
+export * from "./discover/watching"
 
 export * from "./episode/episodes"
 export * from "./episode/sources"

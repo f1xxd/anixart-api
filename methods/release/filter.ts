@@ -5,7 +5,6 @@ import type { IBaseApiParams } from "@/anixart/types"
 import type { IRelease, IReleaseFilterRequest, IReleaseFilterResponse } from "@/anixart/schemas/release"
 
 export interface IReleaseFilterParams extends IBaseApiParams {
-  token: string
   page: number | string
   extendedMode?: boolean
 }
@@ -26,7 +25,6 @@ export async function filter(params: IReleaseFilterParams): Promise<IReleaseFilt
       extended_mode: params.extendedMode,
     },
     json: body,
-    token: params.token,
     ...params.request,
   })
 

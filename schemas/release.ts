@@ -1,4 +1,5 @@
 import type { IPageableResponse } from "@/anixart/schemas/response"
+import type { IForeignProfile } from "@/anixart/schemas/profile"
 
 export enum ReleaseCategory {
   UNKNOWN = 0,
@@ -77,7 +78,7 @@ export interface IRelease {
   season: number
   broadcast: number
   screenshots: unknown[]
-  comments: unknown[]
+  comments: IReleaseComment[]
   title_original: string
   title_ru: string
   title_alt: null
@@ -126,4 +127,23 @@ export interface IRelease {
   video_banners: unknown[]
   profile_release_type_notification_preference_count: number
   is_release_type_notifications_enabled: boolean
+}
+
+export interface IReleaseComment {
+  id: number
+  profile: IForeignProfile
+  message: string
+  timestamp: number
+  type: number
+  vote: number
+  release: IRelease
+  parent_comment_id: number
+  vote_count: number
+  likes_count: number
+  is_spoiler: boolean
+  is_edited: boolean
+  is_deleted: boolean
+  is_reply: boolean
+  reply_count: number
+  can_like: boolean
 }

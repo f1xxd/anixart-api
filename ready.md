@@ -20,3 +20,9 @@
 18) episodeTypes
 19) episodeSources
 20) episodes
+21) videoParse
+22) discoverInteresting
+23) discoverComments
+24) discoverDiscussing
+25) discoverWatching
+26) discoverRecommendations

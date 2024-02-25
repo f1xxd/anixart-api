@@ -29,3 +29,6 @@
 27) favoriteAdd
 28) favoriteDelete
 29) favorites
+30) historyAdd
+31) historyDelete
+32) history

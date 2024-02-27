@@ -25,9 +25,9 @@ export async function history(params: IHistoryParams): Promise<IHistoryResult> {
   })
 
   return {
-    items: response.content,
-    totalCount: response.total_count,
-    page: response.current_page,
-    pagesCount: response.total_page_count,
+    items: response.content ?? null,
+    totalCount: response.total_count ?? null,
+    page: response.current_page ?? null,
+    pagesCount: response.total_page_count ?? null,
   }
 }

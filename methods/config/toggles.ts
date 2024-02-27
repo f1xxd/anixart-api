@@ -25,5 +25,5 @@ export async function toggles(params: ITogglesParams): Promise<ITogglesResult> {
     ...params.request,
   })
 
-  return response
+  return response ?? null
 }

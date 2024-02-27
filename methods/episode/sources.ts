@@ -17,5 +17,5 @@ export async function episodeSources(params: IEpisodeSourceParams): Promise<IEpi
     ...params.request,
   })
 
-  return response.sources
+  return response.sources ?? null
 }

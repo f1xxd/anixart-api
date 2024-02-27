@@ -21,5 +21,5 @@ export async function videoParse(params: IVideoParseParams): Promise<IVideoParse
     ...params.request,
   })
 
-  return response
+  return response ?? null
 }

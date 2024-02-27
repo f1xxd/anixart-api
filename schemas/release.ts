@@ -1,4 +1,4 @@
-import type { IPageableResponse } from "@/anixart/schemas/response"
+import type { IResponse, IPageableResponse } from "@/anixart/schemas/response"
 import type { IForeignProfile } from "@/anixart/schemas/profile"
 
 export enum ReleaseCategory {
@@ -48,12 +48,9 @@ export interface IReleaseStatus {
   name: string
 }
 
-export interface IReleaseResult {
-  code: number
+export interface IReleaseResponse extends IResponse {
   release: IRelease
 }
-
-export interface IReleaseResponse extends IRelease {}
 
 export interface IRelease {
   "@id": number

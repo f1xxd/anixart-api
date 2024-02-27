@@ -14,12 +14,12 @@ export async function schedule(params: IScheduleParams): Promise<IScheduleResult
   })
 
   return {
-    monday: response.monday,
-    tuesday: response.tuesday,
-    wednesday: response.wednesday,
-    thursday: response.thursday,
-    friday: response.friday,
-    saturday: response.saturday,
-    sunday: response.sunday,
+    monday: response.monday ?? null,
+    tuesday: response.tuesday ?? null,
+    wednesday: response.wednesday ?? null,
+    thursday: response.thursday ?? null,
+    friday: response.friday ?? null,
+    saturday: response.saturday ?? null,
+    sunday: response.sunday ?? null,
   }
 }

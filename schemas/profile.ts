@@ -1,3 +1,17 @@
+import type { IResponse, IPageableResponse } from "@/anixart/schemas/response"
+
+export interface IProfileSocialResponse extends IResponse {
+  vk_page: string
+  tg_page: string
+  inst_page: string
+  tt_page: string
+  discord_page: string
+}
+
+export interface IProfileNicknamesResponse extends IPageableResponse<IProfileNicknames> {}
+
+export interface IProfileResponse extends IProfile {}
+
 export interface IProfileToken {
   id: string
   token: string
@@ -17,6 +31,13 @@ export interface IForeignProfile {
   is_banned: boolean
   is_sponsor: boolean
   is_verified: boolean
+}
+
+export interface IProfileNicknames {
+  "@id": number
+  id: number
+  newLogin: string
+  timestamp: number
 }
 
 export interface IProfile {

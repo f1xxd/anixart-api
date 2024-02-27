@@ -32,3 +32,8 @@
 30) historyAdd
 31) historyDelete
 32) history
+33) profile
+34) profileNicknames
+35) profileSocial
+36) searchProfile
+37) searchRelease

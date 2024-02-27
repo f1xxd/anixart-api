@@ -9,11 +9,7 @@ export interface IBindVKParams extends IBaseApiParams {
   vkToken: string
 }
 
-export interface IBindVKResult {
-  code: number
-}
-
-export async function bindVK(params: IBindVKParams): Promise<IBindVKResult> {
+export async function bindVK(params: IBindVKParams): Promise<boolean> {
   const body: IBindVKRequest = {
     accessToken: params.vkToken,
   }
@@ -25,7 +21,5 @@ export async function bindVK(params: IBindVKParams): Promise<IBindVKResult> {
     ...params.request,
   })
 
-  return {
-    code: response.code,
-  }
+  return response.code === 0
 }

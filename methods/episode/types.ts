@@ -16,5 +16,5 @@ export async function episodeTypes(params: IEpisodeTypesParams): Promise<IEpisod
     ...params.request,
   })
 
-  return response.types
+  return response.types ?? null
 }

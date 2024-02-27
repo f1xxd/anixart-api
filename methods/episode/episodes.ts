@@ -18,5 +18,5 @@ export async function episodes(params: IEpisodesParams): Promise<IEpisodesRespon
     ...params.request,
   })
 
-  return response.episodes
+  return response.episodes ?? null
 }

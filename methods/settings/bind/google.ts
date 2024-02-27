@@ -9,11 +9,7 @@ export interface IBindGoogleParams extends IBaseApiParams {
   googleToken: string
 }
 
-export interface IBindGoogleResult {
-  code: number
-}
-
-export async function bindGoogle(params: IBindGoogleParams): Promise<IBindGoogleResult> {
+export async function bindGoogle(params: IBindGoogleParams): Promise<boolean> {
   const body: IBindGoogleRequest = {
     idToken: params.googleToken,
   }
@@ -25,7 +21,5 @@ export async function bindGoogle(params: IBindGoogleParams): Promise<IBindGoogle
     ...params.request,
   })
 
-  return {
-    code: response.code,
-  }
+  return response.code === 0
 }

@@ -18,5 +18,5 @@ export async function types(params: ITypesParams): Promise<ITypesResult> {
     ...params.request,
   })
 
-  return response.types
+  return response.types ?? null
 }

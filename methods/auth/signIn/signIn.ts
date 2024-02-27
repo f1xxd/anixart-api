@@ -28,7 +28,7 @@ export async function signIn(params: IAuthLoginParams): Promise<IAuthLoginResult
   })
 
   return {
-    profile: response.profile,
-    profileToken: response.profileToken,
+    profile: response.profile ?? null,
+    profileToken: response.profileToken ?? null,
   }
 }

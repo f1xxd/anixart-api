@@ -28,6 +28,6 @@ export async function changePassword(params: IChangePasswordParams): Promise<ICh
   })
 
   return {
-    token: response.token,
+    token: response.token ?? null,
   }
 }

@@ -1,0 +1,24 @@
+{
+  "name": "anixart-api",
+  "version": "1.0.0",
+  "description": "Anixart API Client",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": ["anixart"],
+  "scripts": {
+    "prepare": "husky",
+    "lint": "bunx biome lint ./src --apply",
+    "format": "bunx biome format ./src --write",
+    "types": "tsc --noEmit",
+    "prepublish": "tsc"
+  },
+  "author": "flxxd <me@flxxd.ru>",
+  "devDependencies": {
+    "@biomejs/biome": "1.5.3",
+    "@types/bun": "latest",
+    "husky": "^9.0.11"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

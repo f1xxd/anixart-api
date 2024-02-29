@@ -1,6 +1,6 @@
 {
   "name": "anixart-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Anixart API Client",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,7 +9,6 @@
     "prepare": "husky",
     "lint": "bunx biome lint ./src --apply",
     "format": "bunx biome format ./src --write",
-    "types": "tsc --noEmit",
     "prepublish": "tsc"
   },
   "author": "flxxd <me@flxxd.ru>",

@@ -4,5 +4,6 @@ scripts
 src
 .gitignore
 biome.json
+bun.lockb
 README.md
 tsconfig.json

@@ -35,6 +35,9 @@ jobs:
           registry-url: "https://registry.npmjs.org"
           scope: "anixart-api"
 
+      - name: Building
+        run: bun run prepublish
+
       - name: Publish package
         run: npm publish
         env:

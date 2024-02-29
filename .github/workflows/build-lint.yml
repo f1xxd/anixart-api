@@ -1,4 +1,4 @@
-name: Build & Lint
+name: Lint
 
 on:
   push:
@@ -23,6 +23,3 @@ jobs:
 
       - name: Linting
         run: bun run lint
-
-      - name: Building
-        run: bun run build
